@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="PetStoreValidation" duration-ms="50143" started-at="2021-01-25T19:06:17Z" finished-at="2021-01-25T19:07:07Z">
+    <groups>
+      <group name="Get Pet">
+        <method signature="TestPetStore.testGetPets()[pri:1, instance:com.petstore.test.TestPetStore@56f4468b]" name="testGetPets" class="com.petstore.test.TestPetStore"/>
+      </group> <!-- Get Pet -->
+      <group name="Add PET">
+        <method signature="TestPetStore.testAddPet()[pri:2, instance:com.petstore.test.TestPetStore@56f4468b]" name="testAddPet" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeAddPetBodyAsBlank()[pri:7, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeAddPetBodyAsBlank" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeAddPetWithBodyAsOnlyId()[pri:6, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeAddPetWithBodyAsOnlyId" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeAddPetWithoutBody()[pri:5, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeAddPetWithoutBody" class="com.petstore.test.TestPetStore"/>
+      </group> <!-- Add PET -->
+      <group name="Delete Pet">
+        <method signature="TestPetStore.testDeletePet()[pri:4, instance:com.petstore.test.TestPetStore@56f4468b]" name="testDeletePet" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeDeletePetIdAsInvalid()[pri:13, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeDeletePetIdAsInvalid" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeDeletePetIdAsSpecialCharacter()[pri:12, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeDeletePetIdAsSpecialCharacter" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeDeletePetWithOutId()[pri:11, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeDeletePetWithOutId" class="com.petstore.test.TestPetStore"/>
+      </group> <!-- Delete Pet -->
+      <group name="Update Pet">
+        <method signature="TestPetStore.testNegativeUpdatePetWithBodyAsBlank()[pri:9, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeUpdatePetWithBodyAsBlank" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeUpdatePetWithBodyAsOnlyId()[pri:8, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeUpdatePetWithBodyAsOnlyId" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testNegativeUpdatePetWithOutBody()[pri:10, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeUpdatePetWithOutBody" class="com.petstore.test.TestPetStore"/>
+        <method signature="TestPetStore.testUpdatePetStatus()[pri:3, instance:com.petstore.test.TestPetStore@56f4468b]" name="testUpdatePetStatus" class="com.petstore.test.TestPetStore"/>
+      </group> <!-- Update Pet -->
+    </groups>
+    <test name="ApiTest" duration-ms="50143" started-at="2021-01-25T19:06:17Z" finished-at="2021-01-25T19:07:07Z">
+      <class name="com.petstore.test.TestPetStore">
+        <test-method status="PASS" signature="testGetPets()[pri:1, instance:com.petstore.test.TestPetStore@56f4468b]" name="testGetPets" duration-ms="5529" started-at="2021-01-26T00:36:17Z" description="To validate Pet&#039;s having available status" finished-at="2021-01-26T00:36:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPets -->
+        <test-method status="PASS" signature="testAddPet()[pri:2, instance:com.petstore.test.TestPetStore@56f4468b]" name="testAddPet" duration-ms="2217" started-at="2021-01-26T00:36:23Z" description="To validate adding a pet record" finished-at="2021-01-26T00:36:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddPet -->
+        <test-method status="PASS" signature="testUpdatePetStatus()[pri:3, instance:com.petstore.test.TestPetStore@56f4468b]" name="testUpdatePetStatus" duration-ms="1285" started-at="2021-01-26T00:36:25Z" description="To validate pet status as sold" finished-at="2021-01-26T00:36:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePetStatus -->
+        <test-method status="PASS" signature="testDeletePet()[pri:4, instance:com.petstore.test.TestPetStore@56f4468b]" name="testDeletePet" duration-ms="2319" started-at="2021-01-26T00:36:26Z" description="To validate Delete Pet API" finished-at="2021-01-26T00:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeletePet -->
+        <test-method status="PASS" signature="testNegativeAddPetWithoutBody()[pri:5, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeAddPetWithoutBody" duration-ms="2635" started-at="2021-01-26T00:36:29Z" description="To validate adding a pet record without json" finished-at="2021-01-26T00:36:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeAddPetWithoutBody -->
+        <test-method status="PASS" signature="testNegativeAddPetWithBodyAsOnlyId()[pri:6, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeAddPetWithBodyAsOnlyId" duration-ms="22431" started-at="2021-01-26T00:36:31Z" description="To validate adding a pet record with json only have id" finished-at="2021-01-26T00:36:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeAddPetWithBodyAsOnlyId -->
+        <test-method status="PASS" signature="testNegativeAddPetBodyAsBlank()[pri:7, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeAddPetBodyAsBlank" duration-ms="2821" started-at="2021-01-26T00:36:54Z" description="To validate adding a pet record with blank json" finished-at="2021-01-26T00:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeAddPetBodyAsBlank -->
+        <test-method status="PASS" signature="testNegativeUpdatePetWithBodyAsOnlyId()[pri:8, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeUpdatePetWithBodyAsOnlyId" duration-ms="1229" started-at="2021-01-26T00:36:56Z" description="To validate updating a pet record with json only have id" finished-at="2021-01-26T00:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeUpdatePetWithBodyAsOnlyId -->
+        <test-method status="PASS" signature="testNegativeUpdatePetWithBodyAsBlank()[pri:9, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeUpdatePetWithBodyAsBlank" duration-ms="1256" started-at="2021-01-26T00:36:58Z" description="To validate a pet record with blank json" finished-at="2021-01-26T00:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeUpdatePetWithBodyAsBlank -->
+        <test-method status="PASS" signature="testNegativeUpdatePetWithOutBody()[pri:10, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeUpdatePetWithOutBody" duration-ms="1849" started-at="2021-01-26T00:36:59Z" description="To validate a pet record without body" finished-at="2021-01-26T00:37:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeUpdatePetWithOutBody -->
+        <test-method status="PASS" signature="testNegativeDeletePetWithOutId()[pri:11, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeDeletePetWithOutId" duration-ms="2883" started-at="2021-01-26T00:37:01Z" description="To validate Delete Pet API without id" finished-at="2021-01-26T00:37:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeDeletePetWithOutId -->
+        <test-method status="PASS" signature="testNegativeDeletePetIdAsSpecialCharacter()[pri:12, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeDeletePetIdAsSpecialCharacter" duration-ms="2317" started-at="2021-01-26T00:37:04Z" description="To validate Delete Pet API id as Special Character" finished-at="2021-01-26T00:37:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeDeletePetIdAsSpecialCharacter -->
+        <test-method status="PASS" signature="testNegativeDeletePetIdAsInvalid()[pri:13, instance:com.petstore.test.TestPetStore@56f4468b]" name="testNegativeDeletePetIdAsInvalid" duration-ms="1264" started-at="2021-01-26T00:37:06Z" description="To validate Delete Pet API id as Invalid" finished-at="2021-01-26T00:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeDeletePetIdAsInvalid -->
+      </class> <!-- com.petstore.test.TestPetStore -->
+    </test> <!-- ApiTest -->
+  </suite> <!-- PetStoreValidation -->
+</testng-results>

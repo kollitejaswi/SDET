@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PetStoreValidation" verbose="1" preserve-order="true">
+	<test name="ApiTest" verbose="1" preserve-order="true"
+		parallel="classes" thread-count="10">
+		<packages>
+			<package name="com.petstore.test" />
+		</packages>
+	</test>
+</suite>

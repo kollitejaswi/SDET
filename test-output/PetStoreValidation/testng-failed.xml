@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PetStoreValidation]">
+  <test name="ApiTest(failed)" parallel="classes">
+    <classes>
+      <class name="com.petstore.test.TestPetStore">
+        <methods>
+          <include name="testNegativeDeletePetWithOutId"/>
+        </methods>
+      </class> <!-- com.petstore.test.TestPetStore -->
+    </classes>
+  </test> <!-- ApiTest(failed) -->
+</suite> <!-- Failed suite [PetStoreValidation] -->
